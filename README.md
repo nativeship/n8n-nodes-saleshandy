@@ -1,0 +1,372 @@
+# Saleshandy n8n community node
+
+Saleshandy helps sales teams find prospects and manage cold email outreach.
+
+Generated from OpenAPI 1.0 with template 1.1.0. Generated files are platform-managed and will be overwritten during regeneration.
+
+## Authentication
+
+Configure the generated API key credential in n8n before using the node.
+
+## Supported operations
+
+- `POST /v1/analytics/email-sent-details` - Export sent email details
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/analytics/team/stats` - Get team analytics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/analytics/emailaccount/stats` - Get email account analytics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/analytics/consolidated-stats` - Get sequence engagement analytics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/analytics/stats` - Get sequence analytics
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/attachments` - Upload an attachment
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/blacklist-domains` - Blacklist domains
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/clients/assign/{resourceType}` - Assign resources to a client
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/clients` - Create a client
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/clients` - List clients
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/dnc` - Add items to a do-not-contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dnc/{dncListId}` - Get items in a do-not-contact list
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dnc/item/search` - Search do-not-contact items
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/dnc` - List do-not-contact lists
+  - Retry Contract: none
+  - Pagination Contract: none
+- `DELETE /v1/domain/{id}` - Delete an active domain (sof
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/domain/generate-mailbox-names` - Generate mailbox name suggestions for a sender
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/domain/plans` - Get domain pricing plans
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/domain/orders/{orderId}` - Get order status and provisi
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/domain/orders` - List all domain purchase orders wit
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/domain` - List all purchased domains and
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/domain` - Purchase domains & mailboxes as email-sending
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/domain/{id}/revoke` - Restore a previously deleted domain (undo delete)
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/domain/search` - Search available domain names
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/domain/profile-picture/upload` - Upload a profile pic for a sending domain mailbox
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/email-accounts/connect` - Connect new sending email accounts SMTP and IMAP
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/email-accounts/smtp-imap/connect` - Connect an SMTP/IMAP email account
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/email-accounts` - List sending email accounts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/email-accounts/connect/status/{requestId}` - Check email account connection status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/email-accounts/reconnect` - Reconnect existing email accounts.
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/email-accounts/bulk-update` - Update sending accounts in bulk
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/leads/ai-chat` - Search leads with AI
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/leads/bulk-actions/add-to-sequence` - Add leads to a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/enrich/company` - Enrich companies
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/enrich/contact` - Enrich people
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/credits` - Get credit balance and usage
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/enrich/status/result/{requestId}` - Get enrichment results
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/enrich/status/{requestId}` - Get enrichment job status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/search/filters` - List lead search filters
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/enrich/rate-limits` - Get API rate limits
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/search/companies` - Search companies
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/search/people` - Search people
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/fields` - Create a custom field
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/fields` - List all fields
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/fields/{fieldId}` - Update a custom field
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/leads-to-email/domains` - Create a domain-based lead workflow
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/leads-to-email` - Create a leads-to-email workflow
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/notes` - Create a note
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/notes/{noteId}` - Update a note
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/notes/attachments` - Upload an attachment for a note
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects/attribute` - Get a prospect attribute value
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects/import-status/{requestId}` - Check prospect import status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects/{prospectId}/notes` - List notes for a prospect
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/verification-status` - Check email verification status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/import` - Import prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/import-with-field-name` - Import prospects using field names
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/{prospectId}/attribute` - Update prospect field values
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/tags/assign` - Assign tags to prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects` - List prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects/tags` - List prospect tags
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/prospects/{contactId}/minimal/sequences` - Get a contact sequence history
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/tags/un-assign` - Remove tags from prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/contacts/unsubscribe` - Handle a prospect unsubscribe request
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/prospects/unsubscribe` - Unsubscribe prospects
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/prospects/status` - Update prospect statuses
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/schedules` - Create a schedule
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/schedules` - List all schedules
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/contacts` - Add prospects to a sequence step
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/email-accounts/add` - Add accounts to a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences` - Create a new sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/steps` - Create a new step for a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/steps/{stepId}/variants` - Add a new variant to an existing step
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/{sequenceId}/settings` - Get sequence settings (optionally filter by code)
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/{sequenceId}/steps/{stepId}` - Get sequence step variants
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/{sequenceId}/steps` - List all steps and variants for a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences` - List sequences and steps
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/prospects/import-with-field-name` - Import prospects into a sequence using field names
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/email-accounts/remove` - Remove accounts from a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/test-email` - Send a sequence test email
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/{sequenceId}/email-accounts` - List sequence sending accounts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/{sequenceId}/priority-distribution` - Update priority distribution for a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/update-prospect-outcome` - Update prospect outcomes
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/{sequenceId}/schedule` - Update the schedule assigned to a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/{sequenceId}/settings` - Update sequence settings and/or schedule
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/status` - Pause or resume sequences
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/{sequenceId}/steps/{stepId}/variants/{variantId}` - Update a step variant for a sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/verify-prospects` - Start prospect email verification
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/sequences/{sequenceId}/subsequence` - Create a new subsequence under a parent sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/subsequence/{subsequenceId}/settings` - Get schedule, entry delay, & trigger conditions
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/sequences/{sequenceId}/subsequences` - List all subsequences under a parent sequence
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/sequences/{sequenceId}/subsequence/{subsequenceId}` - Update the schedule, entry delay, or conditions
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/bulk-skip` - Skip multiple tasks at the same time
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/bulk-snooze` - Snooze multiple tasks with snooze duration or Time
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/{taskId}/complete` - Complete a task
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/create` - Create a task
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tasks/assignee/list` - List task assignees
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tasks/bulk-status/{bulkActionId}` - Get bulk task status
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tasks/{taskId}` - Get task details
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tasks/counts` - Get task counts
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/tasks` - List tasks
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/{taskId}/skip` - Skip a task
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/tasks/{taskId}/snooze` - Snooze a task
+  - Retry Contract: none
+  - Pagination Contract: none
+- `PATCH /v1/tasks/{taskId}/note` - Update a task note
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/unibox/categories` - List email reply categories
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/unified-inbox/unread-email-threads-count` - Get the unread thread count
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/unified-inbox/emails/{emailThreadId}` - Get an email thread
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/unified-inbox/emails/{emailThreadId}/{emailId}` - Get email content
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/unified-inbox/emails` - List inbox emails
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/unified-inbox/outcome` - List inbox outcomes
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/unified-inbox/emails/reply` - Reply to an email thread
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/user/team-member-list` - List team members
+  - Retry Contract: none
+  - Pagination Contract: none
+- `POST /v1/webhook/create` - Create a webhook
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/webhook/{webhookId}` - Get a webhook
+  - Retry Contract: none
+  - Pagination Contract: none
+- `GET /v1/webhook` - List webhooks
+  - Retry Contract: none
+  - Pagination Contract: none
+
+## Usage
+
+1. Install this community-node package in n8n.
+2. Add the **Saleshandy** node to a workflow.
+3. Select a resource and operation, configure its parameters, and execute the workflow.
+
+## Example workflow
+
+Connect **Manual Trigger** -> **Saleshandy** -> a destination node, select an operation, then run the workflow and inspect the returned items.
+
+## Development
+
+```sh
+npm install
+npm run build
+npm run lint
+npm run dev
+```
+
+`npm run dev` starts a local n8n development instance. Find the integration by its **Saleshandy** display name.

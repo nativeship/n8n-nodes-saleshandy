@@ -1,0 +1,58 @@
+{
+    "author": {
+        "email": "hello@nativeship.io",
+        "name": "Administrator"
+    },
+    "description": "Saleshandy helps sales teams find prospects and manage cold email outreach.",
+    "devDependencies": {
+        "@n8n/node-cli": "0.41.2",
+        "@types/node": "22.15.29",
+        "eslint": "9.29.0",
+        "prettier": "3.6.2",
+        "typescript": "5.9.3"
+    },
+    "engines": {
+        "node": "\u003e=22.22.0"
+    },
+    "files": [
+        "dist"
+    ],
+    "homepage": "https://api.example.com",
+    "keywords": [
+        "n8n-community-node-package",
+        "nativeship",
+        "nativeship-nodes",
+        "n8n",
+        "saleshandy",
+        "n8n-node",
+        "sales-outreach",
+        "cold-email",
+        "email-sequences",
+        "lead-generation"
+    ],
+    "license": "MIT",
+    "n8n": {
+        "credentials": [
+            "dist/credentials/SaleshandyApi.credentials.js"
+        ],
+        "n8nNodesApiVersion": 1,
+        "nodes": [
+            "dist/nodes/Saleshandy/Saleshandy.node.js"
+        ],
+        "strict": true
+    },
+    "name": "@nativeship/n8n-nodes-saleshandy",
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "scripts": {
+        "build": "n8n-node build",
+        "dev": "n8n-node dev",
+        "lint": "n8n-node lint",
+        "lint:fix": "n8n-node lint --fix"
+    },
+    "version": "1.0.0"
+}
